@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Türkiye Haritası ile Eyalet Oluşturma</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+    <h1>Türkiye Haritası ile Eyalet Oluşturma</h1>
+    <div id="map" style="width: 100%; height: 600px;"></div>
+    <div>
+        <h2>Eyalet Oluştur</h2>
+        <form id="stateForm">
+            <label for="stateName">Eyalet İsmi:</label>
+            <input type="text" id="stateName" placeholder="Eyalet Adı" required>
+            <label for="stateColor">Renk:</label>
+            <input type="color" id="stateColor" value="#ff0000" required>
+            <button type="submit">Eyaleti Kaydet</button>
+        </form>
+    </div>
+    <div>
+        <h2>Seçilen İller</h2>
+        <p id="selectedList">Seçilen İller: Hiçbiri</p>
+    </div>
+    <div>
+        <h2>Oluşturulan Eyaletler</h2>
+        <p id="stateOutput">Henüz bir eyalet oluşturulmadı.</p>
+    </div>
+    <footer style="margin-top: 20px; text-align: center; font-size: 14px; color: gray;">
+        <p>Kurucu: Mikail Tunç</p>
+    </footer>
+    <script src="/static/script.js"></script>
+</body>
+</html>

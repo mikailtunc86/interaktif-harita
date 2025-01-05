@@ -1,0 +1,92 @@
+/* Genel Ayarlar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+#map {
+    margin: 0 auto;
+    width: 80%;
+    height: 600px;
+    border: 1px solid black;
+}
+
+/* Form ve Listeleme */
+form {
+    margin-top: 20px;
+}
+
+#selectedList, #stateOutput {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Eyalet İsmi Görünümü */
+.state-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Responsive Ayarlar */
+@media screen and (max-width: 1024px) {
+    #map {
+        width: 90%; /* Tabletler için harita genişliği */
+        height: 500px;
+    }
+    .state-label {
+        font-size: 12px; /* Yazı boyutunu küçült */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #map {
+        width: 95%; /* Telefonlar için harita genişliği */
+        height: 400px;
+    }
+    .state-label {
+        font-size: 10px; /* Telefonlar için daha küçük yazı */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #map {
+        width: 100%; /* Daha küçük telefonlarda tam genişlik */
+        height: 300px;
+    }
+    h1 {
+        font-size: 18px; /* Başlık yazı boyutunu küçült */
+    }
+    .state-label {
+        font-size: 9px; /* Çok küçük ekranlarda daha da küçük yazı */
+    }
+    form {
+        font-size: 14px; /* Form elemanlarını küçült */
+    }
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+
+
